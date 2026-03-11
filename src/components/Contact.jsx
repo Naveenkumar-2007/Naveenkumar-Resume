@@ -31,7 +31,7 @@ export default function Contact() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.15}>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 32 }}>
+          <div className="contact-socials" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'wrap', marginBottom: 32 }}>
             {socials.map(s => (
               <motion.a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
                 whileHover={{ borderColor: `${s.color}45`, boxShadow: `0 0 25px ${s.color}12`, y: -4 }}
@@ -50,7 +50,7 @@ export default function Contact() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.25}>
-          <motion.a href="/resume/Naveen_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer"
+          <motion.a className="contact-resume" href="/resume/Naveen_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer"
             whileHover={{ scale: 1.03, boxShadow: '0 8px 30px rgba(0,212,170,0.25)' }}
             style={{
               display: 'inline-flex', alignItems: 'center', gap: 10, padding: '16px 36px',

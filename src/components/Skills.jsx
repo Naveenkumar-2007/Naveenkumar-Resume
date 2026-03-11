@@ -142,7 +142,7 @@ export default function Skills() {
           </p>
         </ScrollReveal>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 18 }}>
+        <div className="skills-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 18 }}>
           {skillCategories.map((cat, i) => (
             <ScrollReveal key={cat.title} delay={i * 0.06}>
               <motion.div

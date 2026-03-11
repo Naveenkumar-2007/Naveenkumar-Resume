@@ -76,7 +76,7 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.4}>
-          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 50 }}>
+          <div className="hero-buttons" style={{ display: 'flex', gap: 14, flexWrap: 'wrap', marginBottom: 50 }}>
             <a href="#projects" className="btn-primary"><HiOutlineArrowDown /> View Projects</a>
             <a href="/resume/Naveen_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn-outline"><HiOutlineDocumentDownload /> Download Resume</a>
             <a href="mailto:naveenkumarchapala123@gmail.com" className="btn-outline"><HiOutlineMail /> Contact Me</a>
@@ -84,7 +84,7 @@ export default function Hero() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.5}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, maxWidth: 640 }}>
+          <div className="hero-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, maxWidth: 640 }}>
             {stats.map((stat) => (
               <motion.div key={stat.label}
                 whileHover={{ scale: 1.08, borderColor: 'rgba(0,212,170,0.3)' }}

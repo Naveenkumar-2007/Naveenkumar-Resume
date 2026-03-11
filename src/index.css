@@ -233,15 +233,60 @@ img { max-width:100%; display:block; }
 }
 
 /* ========== RESPONSIVE ========== */
+
+/* Tablet */
 @media (max-width: 768px) {
   section { padding: 60px 16px !important; }
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
+
+  /* Hero */
+  .hero-stats { grid-template-columns: repeat(2, 1fr) !important; }
+  .hero-buttons { gap: 10px !important; }
+  .hero-buttons a { padding: 11px 20px !important; font-size: 0.85rem !important; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+
+  /* Skills */
+  .skills-grid { grid-template-columns: 1fr !important; gap: 14px !important; }
+
+  /* Process */
+  .process-step { gap: 14px !important; }
+  .process-icon { min-width: 44px !important; height: 44px !important; border-radius: 12px !important; }
+  .process-line { left: 21px !important; }
+
+  /* Certifications */
+  .cert-card { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; padding: 16px !important; }
+  .cert-actions { width: 100%; display: flex; gap: 8px; flex-wrap: wrap; }
+
+  /* Contact */
+  .contact-socials { flex-direction: column !important; align-items: stretch !important; }
+  .contact-socials a { justify-content: center !important; }
+  .contact-resume { padding: 14px 28px !important; font-size: 0.92rem !important; }
 }
-@media (max-width: 600px) {
-  #hero div[style*="grid-template-columns: repeat(4"] {
-    grid-template-columns: repeat(2, 1fr) !important;
+
+/* Mobile small */
+@media (max-width: 480px) {
+  /* Hero */
+  .hero-stats { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
+  .hero-stats > div { padding: 16px 10px !important; }
+  .hero-buttons { flex-direction: column !important; align-items: stretch !important; }
+  .hero-buttons a { justify-content: center !important; width: 100% !important; }
+
+  /* Projects */
+  .projects-grid { grid-template-columns: 1fr !important; }
+
+  /* Certifications */
+  .cert-card { padding: 14px !important; }
+
+  /* Process */
+  .process-step-content { padding: 16px !important; }
+
+  /* Buttons global */
+  .btn-primary, .btn-outline {
+    padding: 11px 22px !important;
+    font-size: 0.85rem !important;
+    width: 100%;
+    justify-content: center;
   }
 }
 

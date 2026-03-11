@@ -255,7 +255,7 @@ export default function Projects() {
           </p>
         </ScrollReveal>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: 22 }}>
+        <div className="projects-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: 22 }}>
           {projects.map((project, i) => (
             <ProjectCard key={project.title} project={project} index={i} />
           ))}

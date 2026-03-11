@@ -33,7 +33,7 @@ export default function Certifications() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
           {certifications.map((cert, i) => (
             <ScrollReveal key={cert.title} delay={i * 0.08}>
-              <motion.div
+              <motion.div className="cert-card"
                 whileHover={{
                   borderColor: cert.type === 'award' ? 'rgba(240,165,0,0.3)' : 'rgba(0,212,170,0.3)',
                   boxShadow: cert.type === 'award' ? '0 0 30px rgba(240,165,0,0.08)' : '0 0 30px rgba(0,212,170,0.08)',
@@ -55,7 +55,7 @@ export default function Certifications() {
                 <div style={{ flex: 1 }}>
                   <div style={{ fontWeight: 600, fontSize: '0.98rem', color: 'var(--text-primary)' }}>{cert.title}</div>
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div className="cert-actions" style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                   {cert.year && (
                     <span style={{
                       padding: '4px 12px', background: 'rgba(0,212,170,0.1)',

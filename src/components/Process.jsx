@@ -28,16 +28,16 @@ export default function Process() {
 
         <div style={{ position: 'relative' }}>
           {/* Vertical line */}
-          <div style={{
+          <div className="process-line" style={{
             position: 'absolute', left: 28, top: 0, bottom: 0, width: 2,
             background: 'linear-gradient(180deg, rgba(0,212,170,0.3) 0%, rgba(0,184,212,0.2) 50%, rgba(240,165,0,0.15) 100%)',
           }} />
 
           {steps.map((step, i) => (
             <ScrollReveal key={step.num} delay={i * 0.08}>
-              <motion.div whileHover={{ x: 8 }}
+              <motion.div className="process-step" whileHover={{ x: 8 }}
                 style={{ display: 'flex', gap: 24, alignItems: 'flex-start', marginBottom: 32, position: 'relative', cursor: 'default' }}>
-                <motion.div
+                <motion.div className="process-icon"
                   whileHover={{ scale: 1.15, boxShadow: `0 0 25px ${step.color}40` }}
                   style={{
                     minWidth: 56, height: 56, display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -47,7 +47,7 @@ export default function Process() {
                   {step.icon}
                 </motion.div>
 
-                <motion.div
+                <motion.div className="process-step-content"
                   whileHover={{ borderColor: `${step.color}30`, boxShadow: `0 0 20px ${step.color}08` }}
                   style={{
                     flex: 1, padding: 22, background: 'var(--bg-card)',
