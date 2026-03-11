@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { HiOutlineExternalLink } from 'react-icons/hi'
-import { FaRobot, FaChartLine, FaHeartbeat, FaSearch, FaBrain, FaNewspaper, FaShieldAlt, FaImage, FaCloudSun, FaFileAlt } from 'react-icons/fa'
+import { FaRobot, FaChartLine, FaHeartbeat, FaSearch, FaBrain, FaNewspaper, FaShieldAlt, FaImage, FaCloudSun, FaFileAlt, FaCalculator } from 'react-icons/fa'
 import ScrollReveal from './ScrollReveal'
 
 // Real image thumbnails for all projects
@@ -15,6 +15,7 @@ const imageThumbnails = {
   cifar: '/images/projects/cifar-10.png',
   weather: '/images/projects/weather.png',
   article: '/images/projects/Article.png',
+  mathprediction: '/images/projects/mathprediction.png',
 }
 
 const projects = [
@@ -120,6 +121,16 @@ const projects = [
     thumbnail: imageThumbnails.article,
     liveUrl: 'https://naveenkumar-2007-artical-analyzer-app-aa8n5m.streamlit.app/',
     gradient: 'linear-gradient(135deg, #1a3028 0%, #1a2040 100%)',
+  },
+  {
+    title: 'Student Math Performance Prediction',
+    subtitle: 'ML Random Forest Model — 84% Accuracy',
+    desc: 'Random Forest machine learning model trained on educational dataset features to predict student math scores. Uses inputs like gender, parental education, lunch type, test preparation, reading score, and writing score with an interactive web interface for real-time predictions.',
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Flask', 'Matplotlib', 'Seaborn'],
+    icon: <FaCalculator />,
+    thumbnail: imageThumbnails.mathprediction,
+    liveUrl: 'https://mlprojectmath-score.onrender.com/predictdata',
+    gradient: 'linear-gradient(135deg, #0d1b3e 0%, #1a2a47 100%)',
   },
 ]
 
