@@ -69,7 +69,7 @@ const projects = [
     tech: ['Python', 'LangChain', 'LangGraph', 'RAG', 'Streamlit'],
     icon: <FaBrain />,
     thumbnail: imageThumbnails.genai,
-    liveUrl: 'https://naveenkumar-2007--genai-intelligence-studi-streamlit-app-qreybr.streamlit.app/',
+    liveUrl: 'https://naveenkumar-2007--genai-intelligence-studi-streamlit-app-dikk0q.streamlit.app/',
     gradient: 'linear-gradient(135deg, #1e1a3a 0%, #0d3042 100%)',
   },
   {
